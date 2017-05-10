@@ -1307,6 +1307,7 @@ a:hover .nav-title,
 	font-size: 16px;
 	font-size: 1rem;
 	position: relative;
+  z-index: 20;
 }
 
 .navigation-top .wrap {
