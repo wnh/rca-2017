@@ -1333,7 +1333,7 @@ a:hover .nav-title,
 }
 
 .main-navigation #header-icon {
-  display: inline-block;
+  display: none;
   width: 6em;
   float:left;
 }
@@ -3434,6 +3434,9 @@ object {
 
 	.main-navigation {
 		width: auto;
+	}
+	.main-navigation #header-icon {
+		display: inline-block;
 	}
 
 	.js .main-navigation ul,
