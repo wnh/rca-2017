@@ -1334,10 +1334,13 @@ a:hover .nav-title,
 
 .main-navigation #header-icon {
   display: none;
-  width: 6em;
   float:left;
+  margin:0;
+  padding:0;
 }
-
+.main-navigation #header-icon img {
+  width: 6em;
+}
 
 .main-navigation ul {
 	background: #fff;

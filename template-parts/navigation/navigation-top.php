@@ -11,7 +11,10 @@
 ?>
 <nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php _e( 'Top Menu', 'twentyseventeen' ); ?>">
   <?php // TODO(wnh): EDITABLE: main nav icon ?>
-  <img id="header-icon" src="<?php echo get_parent_theme_file_uri( '/assets/images/rca_logo.png' ); ?>" >
+  <?php // TODO(wnh): EDITABLE: link to the homepage ?>
+  <a id="header-icon" href="/">
+    <img src="<?php echo get_parent_theme_file_uri( '/assets/images/rca_logo.png' ); ?>" >
+  </a>
 	<button class="menu-toggle" aria-controls="top-menu" aria-expanded="false"><?php echo twentyseventeen_get_svg( array( 'icon' => 'bars' ) ); echo twentyseventeen_get_svg( array( 'icon' => 'close' ) ); _e( 'Menu', 'twentyseventeen' ); ?></button>
   <div class="main-menu header-menu">
     <?php wp_nav_menu( array(
