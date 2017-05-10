@@ -1332,12 +1332,26 @@ a:hover .nav-title,
 	display: block;
 }
 
+.main-navigation #header-icon {
+  display: inline-block;
+  width: 6em;
+  float:left;
+}
+
+.main-navigation .main-menu {
+  float:left;
+}
+.main-navigation .membership-menu {
+  float:right;
+}
+
 .main-navigation ul {
 	background: #fff;
 	list-style: none;
 	margin: 0;
 	padding: 0 1.5em;
 	text-align: left;
+  margin-left: 3.1em;
 }
 
 /* Hide the menu on small screens when JavaScript is available.
@@ -1356,6 +1370,8 @@ a:hover .nav-title,
 	padding: 0.75em 1.695em;
 }
 
+/* TODO(wnh): This is going to break the multi_menu idea, we need to find a
+ * different way to offset the two other menu */
 .js .main-navigation.toggled-on > div > ul {
 	display: block;
 }
