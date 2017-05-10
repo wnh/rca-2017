@@ -1338,12 +1338,6 @@ a:hover .nav-title,
   float:left;
 }
 
-.main-navigation .main-menu {
-  float:left;
-}
-.main-navigation .membership-menu {
-  float:right;
-}
 
 .main-navigation ul {
 	background: #fff;
@@ -1372,7 +1366,7 @@ a:hover .nav-title,
 
 /* TODO(wnh): This is going to break the multi_menu idea, we need to find a
  * different way to offset the two other menu */
-.js .main-navigation.toggled-on > div > ul {
+.js .main-navigation.toggled-on > .header-menu > div > ul {
 	display: block;
 }
 
@@ -3430,6 +3424,12 @@ object {
 	.js .menu-toggle,
 	.js .dropdown-toggle {
 		display: none;
+	}
+	.main-navigation .main-menu {
+		float:left;
+	}
+	.main-navigation .membership-menu {
+		float:right;
 	}
 
 	.main-navigation {
