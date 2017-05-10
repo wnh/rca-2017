@@ -63,15 +63,8 @@
 			// Make sure the nav isn't taller than two rows.
 			if ( navIsNotTooTall ) {
 
-				// When there's a custom header image or video, the header offset includes the height of the navigation.
-				if ( isFrontPage && ( $body.hasClass( 'has-header-image' ) || $body.hasClass( 'has-header-video' ) ) ) {
-					headerOffset = $customHeader.innerHeight() - navigationOuterHeight;
-				} else {
-					headerOffset = $customHeader.innerHeight();
-				}
-
 				// If the scroll is more than the custom header, set the fixed class.
-				if ( $( window ).scrollTop() >= headerOffset ) {
+				if ( $( window ).scrollTop() >= 0 ) {
 					$navigation.addClass( navigationFixedClass );
 				} else {
 					$navigation.removeClass( navigationFixedClass );
