@@ -1394,7 +1394,7 @@ a:hover .nav-title,
 }
 
 .main-navigation li li,
-.main-navigation li:last-child {
+.main-navigation .membership-menu li:last-child {
 	border: 0;
 }
 
