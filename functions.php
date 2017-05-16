@@ -93,9 +93,10 @@ function twentyseventeen_setup() {
 
 	// Add theme support for Custom Logo.
 	add_theme_support( 'custom-logo', array(
-		'width'       => 250,
-		'height'      => 250,
-		'flex-width'  => true,
+		'width'        => 90,
+		'height'       => 45,
+		'flex-width'   => true,
+		'flex-height'  => true,
 	) );
 
 	// Add theme support for selective refresh for widgets.
@@ -565,3 +566,15 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
  * SVG icons functions and filters.
  */
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
+
+
+
+function rca_get_logo_url() {
+  $custom_logo_id = get_theme_mod( 'custom_logo' );
+  $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+  if ( has_custom_logo()) {
+    return $logo[0];
+  } else {
+    return '';
+  }
+}

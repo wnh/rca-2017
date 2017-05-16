@@ -1339,7 +1339,8 @@ a:hover .nav-title,
   padding:0;
 }
 .main-navigation #header-icon img {
-  width: 6em;
+  max-width: 6em;
+  max-height: 3.1em;
 }
 
 .main-navigation ul {
