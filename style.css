@@ -1330,6 +1330,9 @@ a:hover .nav-title,
 	font-size: 1rem;
 	position: relative;
   z-index: 20;
+
+  box-shadow: 1px 2px 11px 1px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #d6d6d6;
 }
 
 .navigation-top .wrap {
