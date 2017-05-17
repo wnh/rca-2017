@@ -17,6 +17,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
+0.0 RCA Additions
 1.0 Normalize
 2.0 Accessibility
 3.0 Alignments
@@ -45,6 +46,27 @@ Use it to make something cool, have fun, and share what you've learned with othe
 19.0 Media Queries
 20.0 Print
 --------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+0.0 New RCA Stuff
+--------------------------------------------------------------*/
+
+.sponsors {
+  background: #fff;
+  /* TODO(wnh): sort this out so its not magic, comes from the header height */
+  margin-top: 70px;
+}
+
+.sponsors .gold-sponsors {
+  padding: 1em;
+  display: flex;
+}
+
+.sponsors .gold-sponsors .sponsor {
+  flex: 1;
+  text-align: center;
+  /* TODO(wnh): Figure out why vertical alignment aint working quite right*/
+}
 
 /*--------------------------------------------------------------
 1.0 Normalize

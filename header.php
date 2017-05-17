@@ -37,6 +37,9 @@
 			</div><!-- .navigation-top -->
 		<?php endif; ?>
 
+    <div class="sponsors">
+      <?php rca_gold_sponsors(); ?>
+    </div>
 		<?php get_template_part( 'template-parts/header/header', 'image' ); ?>
 
 	</header><!-- #masthead -->

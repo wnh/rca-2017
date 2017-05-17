@@ -568,6 +568,7 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
 
 
+require get_parent_theme_file_path( '/inc/sponsor-functions.php' );
 
 function rca_get_logo_url() {
   $custom_logo_id = get_theme_mod( 'custom_logo' );
