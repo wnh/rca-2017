@@ -8,7 +8,7 @@ function rca_gold_sponsors() {
         'pagination'      => false,
         'order'           => 'ASC',
         'posts_per_page'  => '-1',
-        'orderby'         => $instance['order_by'],
+        //'orderby'         => $instance['order_by'],
         'tax_query'       => array(
               array(
                   'taxonomy' => 'sponsor_categories',

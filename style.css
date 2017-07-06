@@ -60,6 +60,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .sponsors .gold-sponsors {
   padding: 1em;
   display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .sponsors .gold-sponsors .sponsor {
