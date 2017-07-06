@@ -79,23 +79,6 @@
 		}
 	}
 
-	// Set margins of branding in header.
-	function adjustHeaderHeight() {
-		if ( 'none' === $menuToggle.css( 'display' ) ) {
-
-			// The margin should be applied to different elements on front-page or home vs interior pages.
-			if ( isFrontPage ) {
-				$branding.css( 'margin-top', navigationOuterHeight );
-			} else {
-				$customHeader.css( 'margin-top', navigationOuterHeight );
-			}
-
-		} else {
-			$customHeader.css( 'margin-bottom', '0' );
-			$branding.css( 'margin-bottom', '0' );
-		}
-	}
-
 	// Set icon for quotes.
 	function setQuotesIcon() {
 		$( twentyseventeenScreenReaderText.quote ).prependTo( $formatQuote );
@@ -200,7 +183,6 @@
 			});
 		}
 
-		adjustHeaderHeight();
 		setQuotesIcon();
 		if ( true === supportsInlineSVG() ) {
 			document.documentElement.className = document.documentElement.className.replace( /(\s*)no-svg(\s*)/, '$1svg$2' );
@@ -217,7 +199,6 @@
 		// On scroll, we want to stick/unstick the navigation.
 		$( window ).on( 'scroll', function() {
 			adjustScrollClass();
-			adjustHeaderHeight();
 		});
 
 		// Also want to make sure the navigation is where it should be on resize.
@@ -232,7 +213,6 @@
 		resizeTimer = setTimeout( function() {
 			belowEntryMetaClass( 'blockquote.alignleft, blockquote.alignright' );
 		}, 300 );
-		setTimeout( adjustHeaderHeight, 1000 );
 	});
 
 	// Add header video class after the video is loaded.

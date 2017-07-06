@@ -3692,7 +3692,7 @@ object {
 	.home.blog.has-header-image .custom-header-media,
 	.home.blog.has-header-video .custom-header-media {
 		height: 1200px;
-		height: 100vh;
+		height: 70vh;
 		max-height: 100%;
 		overflow: hidden;
 	}
