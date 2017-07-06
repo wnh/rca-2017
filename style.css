@@ -66,8 +66,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 .sponsors .gold-sponsors .sponsor {
   flex: 1;
-  text-align: center;
-  /* TODO(wnh): Figure out why vertical alignment aint working quite right*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .rca-sponsors .widget-title {
